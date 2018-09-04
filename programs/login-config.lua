@@ -1,4 +1,4 @@
-os.loadAPI("computercraft-so/apis/default.lua")
+os.loadAPI("computercraft-os/apis/default.lua")
 os.loadAPI("computercraft-os/apis/sha256.lua")
 
 term.setTextColor(default.mod_color)
