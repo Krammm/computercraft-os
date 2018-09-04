@@ -1,4 +1,3 @@
-os_name = "No name set"
-os_version = "No version set"
-
+shell.run("computercraft-os/programs/login.lua")
+shell.run("computercraft-os/main.lua")
 
