@@ -25,7 +25,7 @@ while loggedIn == false do
   else
   
     term.setTextColor(colors.red)  
-    print("Wrong Password. Rerty")
+    print("Wrong Password. Retry")
     
   end
 
