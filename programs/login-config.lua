@@ -10,7 +10,8 @@ print("Insert your new password.")
 local password = read()
 password = sha256.sha256(password)
 
-fs.write(password)
+passfile.write(password)
+passfile.close()
 
 term.setTextColor(defualt.success_color)
 print("Password changed successfully.")
