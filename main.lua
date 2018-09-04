@@ -1,17 +1,14 @@
 -- This file handles user-inserted commands.
-
-default_color = colors.white
-mod_color = colors.cyan
-error_color = colors.red
+os.loadAPI("computercraft-os/apis/default.lua")
 
 local function clear() 
   
   term.clear()
   term.setCursorPos(1, 1)
-  term.setTextColor(mod_color)
+  term.setTextColor(default.mod_color)
   print("> ")
   term.setCursorPos(3, 1)
-  term.setTextColor(default_color)
+  term.setTextColor(default.default_color)
   
 end
 
@@ -28,7 +25,7 @@ while true do
     
   else 
     
-    term.setTextColor(error_color)
+    term.setTextColor(default.error_color)
     print("Error. '" .. command .. "' command not found.")
     
   end
