@@ -10,7 +10,7 @@ local function clear()
   term.setCursorPos(1, 1)
   term.setTextColor(mod_color)
   print("> ")
-  term.setCursorPos(1, 3)
+  term.setCursorPos(3, 1)
   term.setTextColor(default_color)
   
 end
