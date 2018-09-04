@@ -1,6 +1,6 @@
 os.loadAPI("computercraft-os/apis/sha256.lua")
 
-local passfile = fs.open("computercraft-os/user/password.txt", "r") -- Get the file where the ahshed password is located
+local passfile = fs.open("computercraft-os/user/password.txt", "r") -- Get the file where the hashed password is located
 local password = passfile.readAll() -- Read the password
 passfile.close() -- Close the file
 local loggedIn = false -- Loop boolean
