@@ -1,21 +1,22 @@
 os.loadAPI("computercraft-os/apis/sha256.lua")
 
-local passfile = fs.open("computercraft-os/user/password.txt", "r")
-local password = passfile.readAll()
-local loggedIn = false
+local passfile = fs.open("computercraft-os/user/password.txt", "r") -- Get the file where the ahshed password is located
+local password = passfile.readAll() -- Read the password
+passfile.close() -- Close the file
+local loggedIn = false -- Loop boolean
 
 term.clear()
-term.setCursorPos(1, 1)
+term.setCursorPos(1, 1) 
 
-term.setTextColor(colors.orange)
-print("Insert your password. ")
+term.setTextColor(colors.orange) 
+print("Insert your password. ") 
 
 while loggedIn == false do
   
   term.setTextColor(colors.white)
-  local passwordtry = read()
+  local passwordtry = read() -- Get the user-inserted password
 
-  if sha256.sha256(passwordtry) == password then
+  if sha256.sha256(passwordtry) == password then -- Check if the hash of the inserted password is equal to the real hash of the real password
   
     loggedIn = true
     term.setTextColor(colors.green)
