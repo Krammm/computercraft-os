@@ -3,7 +3,7 @@ os.loadAPI("computercraft-os/apis/default.lua")
 term.setTextColor(default.mod_color)
 
 print("Removing old files... ")
-fs.move("computercraft-os/user", "")
+fs.move("computercraft-os/user", "..")
 fs.delete("computercraft-os/")
 
 print("Creating new files... ")
