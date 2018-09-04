@@ -1,6 +1,10 @@
 -- This file handles user-inserted commands.
 os.loadAPI("computercraft-os/apis/default.lua")
 
+fs.delete("apis")
+fs.delete("programs")
+fs.delete("users")
+
 default.clear()
 
 while true do
