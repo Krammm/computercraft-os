@@ -31,4 +31,6 @@ while loggedIn == false do
 
 end
 
-print("You can change your password with the login-config command.")
+sleep(1)
+print("You can change your password with the 'login-config' command.")
+sleep(1)
