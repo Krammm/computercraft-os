@@ -1,3 +1,3 @@
-shell.run("computercraft-os/programs/login.lua")
-shell.run("computercraft-os/main.lua")
+shell.run("programs/login.lua")
+shell.run("main.lua")
 
