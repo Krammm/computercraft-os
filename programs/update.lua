@@ -11,5 +11,5 @@ shell.run("cd computercraft-os")
 shell.run("gitget Krammm computercraft-os")
 fs.move("computercraft-os/startup.lua", "startup.lua")
 
-setTextColor(default.success_color)
+term.setTextColor(default.success_color)
 print("Successfully Updated.")
