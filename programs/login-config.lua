@@ -13,5 +13,5 @@ password = sha256.sha256(password)
 passfile.write(password)
 passfile.close()
 
-term.setTextColor(defualt.success_color)
+term.setTextColor(default.success_color)
 print("Password changed successfully.")
